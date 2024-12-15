@@ -15,8 +15,6 @@
             <h1 class="text-2xl font-bold">StayScape<span class="text-gray-400">.com</span></h1>
             <nav class="flex space-x-6">
                 <a href="#" class="text-gray-700 hover:text-gray-900">List your property</a>
-                <a href="#" class="text-gray-700 hover:text-gray-900">Support</a>
-                <a href="#" class="text-gray-700 hover:text-gray-900">Trips</a>
             </nav>
             <button class="px-4 py-2 bg-gray-900 text-white rounded-md">Login/ Sign-up</button>
         </div>
@@ -26,8 +24,8 @@
     <section class=" px-12 relative bg-cover bg-center h-[500px] py-12 text-white"
         style="background-image: url('../Assets/pexels-quang-nguyen-vinh-222549-6129991.jpg');">
         <div class="text-left">
-            <h2 class="text-7xl font-normal mb-4 max-w-[50%] drop-shadow-lg">Explore your place to stay</h2>
-            <form class="flex p-3 gap-4 bg-[#3a3a39] text-white rounded-md shadow-lg overflow-hidden w-[800px]">
+            <h2 class="text-7xl font-bold mb-4 max-w-[50%] drop-shadow-lg ">Explore your place to stay</h2>
+            <form class="mt-8 flex p-3   gap-4 bg-[#3a3a39] text-white rounded-md shadow-lg overflow-hidden w-[800px]">
                 <input type="text" placeholder="Location"class="bg-[#252525] text-white px-4 py-2 w-1/3 focus:outline-none h-10 rounded-lg shadow-[inset_0_2px_4px_rgba(0,0,0,0.6)]">
                 <input type="date" placeholder="Check in" class="bg-[#252525] px-4 py-2 w-1/4 focus:outline-none h-[40px] rounded-lg shadow-[inset_0_2px_4px_rgba(0,0,0,0.6)]">
                 <input type="date" placeholder="Check out" class="bg-[#252525] px-4 py-2 w-1/4 focus:outline-none h-[40px] rounded-lg shadow-[inset_0_2px_4px_rgba(0,0,0,0.6)]">
@@ -45,61 +43,47 @@
         </div>
     </section>
 
-    <!-- Hotels in Your Area -->
+    <!-- Hotels Data -->
     <section class="container mx-auto px-6 py-12">
-        <h3 class="text-2xl font-bold mb-6">Hotels in your area</h3>
-        <div class="flex space-x-4 overflow-x-auto">
-            <div class="bg-white rounded-md shadow-md p-4 w-60">
-                <img src="https://via.placeholder.com/240x180" alt="Hotel 1" class="rounded-md mb-4">
-                <h4 class="text-lg font-semibold">Villa, Kemah Tinggi</h4>
-                <p class="text-gray-500">$900/night</p>
+        <div class="flex bg-white rounded-lg shadow-lg overflow-hidden">
+            <!-- Hotel Image -->
+            <img src="https://via.placeholder.com/240x180" alt="Hotel Image" class="w-1/3 object-cover">
+        
+            <!-- Hotel Details -->
+            <div class="p-4 w-2/3 flex flex-col justify-between">
+                <div>
+                    <h4 class="text-xl font-semibold mb-2">Novotel Goa Resort & Spa</h4>
+                    <p class="text-sm text-gray-500">Balinese-style Garden Oasis, Warren Tricomi Spa Experience</p>
+                    <p class="text-sm text-gray-500 mt-1">Candolim, 1.4 km to City Centre</p>
+                </div>
+                <div class="flex items-center mt-2">
+                    <span class="text-green-600 font-bold mr-2">8.6</span>
+                    <p class="text-sm text-gray-500">(5701 ratings) Excellent</p>
+                </div>
             </div>
-            <div class="bg-white rounded-md shadow-md p-4 w-60">
-                <img src="https://via.placeholder.com/240x180" alt="Hotel 2" class="rounded-md mb-4">
-                <h4 class="text-lg font-semibold">Villa, Kuta Premiere</h4>
-                <p class="text-gray-500">$920/night</p>
-            </div>
-            <div class="bg-white rounded-md shadow-md p-4 w-60">
-                <img src="https://via.placeholder.com/240x180" alt="Hotel 3" class="rounded-md mb-4">
-                <h4 class="text-lg font-semibold">Villa, Kuta Premiere</h4>
-                <p class="text-gray-500">$920/night</p>
-            </div>
-            <div class="bg-white rounded-md shadow-md p-4 w-60">
-                <img src="https://via.placeholder.com/240x180" alt="Hotel 4" class="rounded-md mb-4">
-                <h4 class="text-lg font-semibold">Villa, Kemah Tinggi</h4>
-                <p class="text-gray-500">$900/night</p>
+        
+            <!-- Pricing and Booking Section -->
+            <div class="bg-gray-50 p-4 flex flex-col justify-between w-1/3 border-l">
+                <div>
+                    <div class="bg-red-100 text-red-600 text-sm font-medium px-2 py-1 rounded mb-2 inline-block">
+                        Our cheapest price
+                    </div>
+                    <p class="text-gray-500 text-sm">Hotels.com</p>
+                    <p class="text-sm text-gray-500 mt-1">Free cancellation before 17 Dec</p>
+                    <p class="text-sm text-gray-500">Breakfast included</p>
+                </div>
+                <div>
+                    <p class="text-lg font-semibold text-green-600 mt-2">₹17,524</p>
+                    <p class="text-sm text-gray-500">22 nights for ₹3,85,535</p>
+                    <button class="w-full bg-green-500 text-white py-2 mt-2 rounded-lg">View Deal</button>
+                    <p class="text-sm text-gray-500 mt-2 text-center">₹17,525 Novotel</p>
+                    <button class="w-full bg-gray-200 py-2 mt-2 rounded-lg text-sm">More prices</button>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Browse by Property Type -->
-    <section class="bg-gray-50 py-12">
-        <div class="container mx-auto px-6">
-            <h3 class="text-2xl font-bold mb-6">Browse by property type</h3>
-            <div class="flex space-x-4 overflow-x-auto">
-                <div class="flex flex-col items-center">
-                    <img src="https://via.placeholder.com/160x120" alt="Hotels" class="rounded-md mb-2">
-                    <span>Hotels</span>
-                </div>
-                <div class="flex flex-col items-center">
-                    <img src="https://via.placeholder.com/160x120" alt="Apartments" class="rounded-md mb-2">
-                    <span>Apartments</span>
-                </div>
-                <div class="flex flex-col items-center">
-                    <img src="https://via.placeholder.com/160x120" alt="Resorts" class="rounded-md mb-2">
-                    <span>Resorts</span>
-                </div>
-                <div class="flex flex-col items-center">
-                    <img src="https://via.placeholder.com/160x120" alt="Villas" class="rounded-md mb-2">
-                    <span>Villas</span>
-                </div>
-                <div class="flex flex-col items-center">
-                    <img src="https://via.placeholder.com/160x120" alt="Cottages" class="rounded-md mb-2">
-                    <span>Cottages</span>
-                </div>
-            </div>
-        </div>
-    </section>
+    
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12">
