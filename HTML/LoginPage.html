@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Login Page</title>
+</head>
+<body class="h-screen flex items-center justify-center">
+  <div class="bg-white shadow-lg rounded-sm flex overflow-hidden w-[60%]">
+    <!-- Left Section -->
+    <div class="w-1/2 relative bg-blue-500 flex items-center justify-center">
+      <div class="absolute inset-0 flex items-center justify-center">
+        <div class="w-[99%] h-[99%] bg-white rounded-md">
+        <img id="dynamic-image" src="../Assets/pexels-david-bartus-43782-586687.jpg" alt="Hot Air Balloon"
+            class="rounded-md object-cover w-full h-full">
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Section -->
+    <div class="w-1/2 bg-gray-50 p-8 flex flex-col justify-center">
+      <h2 class="text-2xl font-bold text-gray-800 mb-4">Create your Free Account</h2>
+      <form action="#" class="space-y-4">
+        <div>
+          <label for="full-name" class="block text-sm font-medium text-gray-600">Full Name</label>
+          <input 
+            type="text" 
+            id="full-name" 
+            placeholder="Enter your Full Name here" 
+            class="mt-1 block w-full p-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500">
+        </div>
+        <div>
+          <label for="email" class="block text-sm font-medium text-gray-600">Email</label>
+          <input 
+            type="email" 
+            id="email" 
+            placeholder="Enter your Email here" 
+            class="mt-1 block w-full p-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500">
+        </div>
+        <div>
+          <label for="password" class="block text-sm font-medium text-gray-600">Password</label>
+          <input 
+            type="password" 
+            id="password" 
+            placeholder="Enter your Password here" 
+            class="mt-1 block w-full p-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500">
+        </div>
+        <button 
+          type="submit" 
+          class="w-full py-2 px-4 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 focus:ring-2 focus:ring-blue-500"
+        >Create Account</button>
+      </form>
+      <p class="text-sm text-gray-600 mt-4">Already have an account? <a href="#" class="text-blue-600 hover:underline">Log in</a></p>
+
+      <div class="flex items-center my-4">
+        <hr class="flex-grow border-gray-300">
+        <span class="px-4 text-gray-600">OR</span>
+        <hr class="flex-grow border-gray-300">
+      </div>
+
+      <button 
+        class="flex items-center justify-center w-full py-2 px-4 border border-gray-300 rounded-lg hover:bg-gray-100">
+        <img src="../Assets/Vector.svg" alt="Google Logo" class="w-5 h-5 mr-2">Sign up with Google
+      </button>
+    </div>
+  </div>
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const images = [
+            "../Assets/pexels-freestockpro-2166559.jpg",
+            "../Assets/pexels-michael-block-1691617-3225531.jpg",
+            "../Assets/pexels-pixabay-237272.jpg",
+            "../Assets/pexels-symeon-ekizoglou-1107605-2105937.jpg"
+        ];
+
+        const imgElement = document.getElementById("dynamic-image");
+        let currentIndex = 0;
+
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % images.length;
+            imgElement.src = images[currentIndex];
+        }, 3000); // Change interval as needed
+    });
+</script>
+</body>
+</html>
