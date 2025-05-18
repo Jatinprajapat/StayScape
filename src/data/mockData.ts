@@ -240,7 +240,7 @@ export const hotels: Hotel[] = [
 // Generate more hotels by cloning and modifying existing ones
 export const generateMoreHotels = (count: number): Hotel[] => {
   const moreHotels: Hotel[] = [];
-  const cities = ['London', 'Paris', 'Tokyo', 'Rome', 'Barcelona', 'Berlin', 'Sydney', 'Dubai'];
+  const cities = ['London', 'Paris', 'Tokyo', 'Rome', 'Barcelona', 'Berlin', 'Sydney', 'Dubai', 'India'];
   const hotelTypes = ['Hotel', 'Resort', 'Apartment', 'Guesthouse', 'Villa', 'Inn', 'Hostel'];
   
   for (let i = 0; i < count; i++) {
