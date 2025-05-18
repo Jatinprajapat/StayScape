@@ -354,7 +354,7 @@ export const getLocationSuggestions = (query: string): Location[] => {
 
 // Get hotel by ID
 export const getHotelById = (id: string): Hotel | undefined => {
-  return [...hotels, ...generateMoreHotels(45)].find(hotel => hotel.id === id);
+  return [...hotels, ...generateMoreHotels(95)].find(hotel => hotel.id === id);
 };
 
 // Search hotels with filters
