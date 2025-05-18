@@ -155,7 +155,7 @@ const SearchForm: React.FC<SearchFormProps> = ({ isCompact = false, className = 
             type="text"
             value={locationInput}
             onChange={handleLocationChange}
-            placeholder="Where are you going?"
+            placeholder="Where are you going?" required
             className={`w-full pl-10 pr-8 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 ${
               isCompact ? 'text-sm' : ''
             }`}
